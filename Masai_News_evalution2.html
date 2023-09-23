@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Masai News</title>
     <style>
-        .container{
+        .container1{
             background-color: lightsteelblue;
-            height: 400px;
+            height: 700px;
             width: 100%;
         }
         .heading{
@@ -16,18 +16,19 @@
             font-size: 50px;
         }
         .secondBox{
-            border: 2px solid red;
+            /* border: 2px solid red; */
             display: flex;
-            height: 550px;
+            /* height: fit-content; */
             width: 1200px;
             margin: auto;
             justify-content: space-between;
         }
         .child{
-            border: 2px solid black;
+            border: 2px solid white;
             height: 500px;
             width: 370px;
             background-color: white;
+            border-radius: 15px;
         }
         .subchild{
             border: 1px solid gray;
@@ -45,8 +46,8 @@
             /* border: 2px solid green; */
         }
         .info{
-             border: 1px solid red;  
-             height: 300px;
+             /* border: 1px solid red;   */
+             height: 210px;
              width: 300px; 
              margin-top: 20px;
         }
@@ -59,10 +60,56 @@
             color: gray;
             font-size: 18px;
         }
+        .button1{
+            height: 40px;
+            width: 100px;
+            border: 1px solid red;
+            margin-top: 30px;
+            color: red;
+            margin-left: 50%;
+        }
+        .button1:hover{
+            background-color: lightsalmon;
+        }
+        .container2{
+                display: flex;
+                /* border: 2px solid green; */
+                width: 1210px;
+                margin: auto;
+                justify-content: space-between;
+            }
+            .sub{
+                height: 200px;
+                width: 360px;
+                border: 1px solid gray;
+                border-radius: 12px;
+            }
+            h1{
+                font-weight: bold;
+                font-size: 35px;
+                text-align: center;
+            }
+            .poster{
+                width: 87%;
+                margin: 20px;
+                height: 160px;
+                /* border: 2px solid pink; */
+            }
+            .button2{
+            height: 40px;
+            width: 180px;
+            border: 1px solid red;
+            margin-top: 30px;
+            color: red;
+            margin-left: 50%;
+            }
+            .button2:hover{
+            background-color: lightsalmon;
+        }
     </style>    
 </head>
 <body>
-    <div class="container">
+    <div class="container1">
         <h1 class="heading">Masai In News</h1>
         <div class="secondBox">
             <div class="child">
@@ -103,8 +150,23 @@
                     </div>
                 </div>
             </div>
+            
         </div>
+        <button class="button1">SEE MORE  > </button>
 
     </div>
+    <h1>Our Investors (Who believed in us)</h1>
+    <div class="container2">
+        <div class="sub">
+            <img class="poster" src="https://www.masaischool.com/images/our-investors/india-q-borderless.svg">
+        </div>
+        <div class="sub">
+            <img class="poster" src="https://www.masaischool.com/images/our-investors/unitus-borderless.svg">
+        </div>
+        <div class="sub">
+            <img class="poster" src="https://www.masaischool.com/images/our-investors/omidyar-borderless.svg">
+        </div>
+    </div>
+    <button class="button2">SEE MORE INVESTORS > </button>
 </body>
 </html>
